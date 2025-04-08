@@ -1,0 +1,50 @@
+---
+config:
+  layout: elk
+---
+flowchart TD
+ subgraph subGraph0["Frontend Layer"]
+        UI["User Interface - Streamlit"]
+        FileUpload["File Upload Component"]
+        ChatInterface["Chat Interface"]
+        LangSelector["Language Selector"]
+        ResultsView["Results Visualization"]
+  end
+ subgraph subGraph1["API Layer"]
+        API["Node.js Backend"]
+        FileProcessor["File Processing Service"]
+        AuthService["Authentication Service"]
+        LangDetector["Language Detection"]
+        APIRoutes["API Routes"]
+  end
+ subgraph subGraph2["Core Processing Layer"]
+        Core["LangChain Orchestrator"]
+        DocProcessor["Document Processor"]
+        IntentRecognizer["Intent Recognizer"]
+        LLMManager["LLM Manager"]
+        HistoryManager["History Manager"]
+  end
+ subgraph subGraph3["Tool Layer"]
+        ToolRegistry["Tool Registry"]
+        CSVAnalyzer["CSV Analyzer Tool"]
+        ExcelProcessor["Excel Processor Tool"]
+        TextSummarizer["Text Summarization Tool"]
+        TableQuerier["Table Query Tool"]
+        Visualizer["Data Visualization Tool"]
+        WebExtractor["Web Content Extractor"]
+  end
+ subgraph subGraph4["Database Layer"]
+        DB["Database"]
+        DocumentStore["Document Storage"]
+        ChatHistory["Chat History"]
+        VectorDB["Vector Database"]
+  end
+    UI --- FileUpload & ChatInterface & LangSelector & ResultsView
+    API --- FileProcessor & AuthService & LangDetector & APIRoutes
+    Core --- DocProcessor & IntentRecognizer & LLMManager & HistoryManager
+    ToolRegistry --- CSVAnalyzer & ExcelProcessor & TextSummarizer & TableQuerier & Visualizer & WebExtractor
+    DB --- DocumentStore & ChatHistory & VectorDB
+    UI --> API
+    API --> Core
+    Core --> ToolRegistry & DB
+    ToolRegistry --> Core
