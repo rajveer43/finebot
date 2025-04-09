@@ -34,7 +34,7 @@ llm = LLM(
 )
 
 os.environ["OPENAI_API_KEY"] = ""
-# os.environ["GEMINI_API_KEY"] = "AIzaSyDYmei4WbkEX9p_6rF_RaANkl72DgxEIBQ"
+
 # ==== Language Detection Tool ====
 class LanguageDetectionTool:
     def _run(self, text: str) -> str:
