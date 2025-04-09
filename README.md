@@ -1,5 +1,5 @@
 I'll help you create a 4-day development plan with clear milestones for building the Financial Intelligence Chatbot. Let me break this down into manageable steps.
-
+# os.environ["GEMINI_API_KEY"] = "AIzaSyDYmei4WbkEX9p_6rF_RaANkl72DgxEIBQ"
 # 4-Day Development Plan
 
 ## Day 1: Project Setup & Core Architecture
