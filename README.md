@@ -39,7 +39,8 @@ This implementation uses an agentic AI architecture powered by Google's Gemini m
 - Comprehensive history tracking
 - Third-party charting library integration
 
-## Project Structure```
+## Project Structure
+```
 FinWise/
 ├── keys/              # API keys and credentials
 ├── src/
@@ -79,6 +80,7 @@ FinWise/
 ├── debug_tools.py     # Debugging and tool validation utilities
 ├── requirements.txt   # Dependencies
 └── .env               # Environment variables```
+```
 
 ## Technology Stack
 
