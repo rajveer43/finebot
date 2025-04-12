@@ -1,0 +1,85 @@
+# FinWise Application Dependencies
+# Core dependencies
+streamlit==1.30.0
+python-dotenv==1.0.0
+tqdm==4.66.1
+pydantic==2.5.2
+asyncio==3.4.3
+nest_asyncio==1.5.8
+
+# Language models and AI
+google-generativeai==0.3.1
+groq==0.4.0
+langdetect==1.0.9
+googletrans==4.0.0-rc1
+nltk==3.8.1
+
+# Data processing and visualization
+pandas==2.1.3
+numpy==1.26.2
+matplotlib==3.8.2
+plotly==5.18.0
+seaborn==0.13.0
+altair==5.1.2
+scipy==1.11.4
+statsmodels==0.14.0
+
+# File processing
+openpyxl==3.1.2
+xlrd==2.0.1
+PyMuPDF==1.23.6  # For PDF processing
+python-docx==1.0.1
+tabula-py==2.8.2
+pytesseract==0.3.10
+pdf2image==1.16.3
+python-pptx==0.6.21
+python-docx 
+
+# Web tools and HTTP
+requests==2.31.0
+aiohttp==3.9.1
+beautifulsoup4==4.12.2
+serpapi==0.1.3
+html2text==2020.1.16
+validators==0.22.0
+
+# Database
+pymongo==4.7.0
+motor==3.3.1  # Async MongoDB driver
+bson==0.5.10
+
+# Image processing
+pillow==10.1.0
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-asyncio==0.23.2
+
+# Development tools
+black==23.11.0
+isort==5.12.0
+mypy==1.7.1
+flake8==6.1.0
+
+# Documentation
+sphinx==7.1.2
+sphinx-rtd-theme==1.3.0
+
+# Utilities
+pytz==2023.3
+python-dateutil==2.8.2
+loguru==0.7.2
+cachetools==5.3.2
+humanize==4.9.0
+cryptography==41.0.5  # For secure handling of sensitive data
+pyarrow==14.0.1  # For efficient data handling with pandas
+
+# Export functionality
+fpdf==1.7.2
+XlsxWriter==3.1.9
+jsonschema==4.20.0
+
+# Deployment
+gunicorn==21.2.0
+uvicorn==0.24.0.post1
