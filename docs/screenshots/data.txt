@@ -1,0 +1,12 @@
+AI for Programming
+Algorithms and Complexity
+Applied Machine Learning
+Computer Systems & Networking
+Human Computer Interaction / Technology for Development
+Machine Learning Theory
+Multimodal LLMs
+Natural Language Processing
+Programming Languages and Compilers
+Security and Cryptography
+Software Development and Engineering
+Computer Vision
