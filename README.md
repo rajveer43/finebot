@@ -177,7 +177,7 @@ MONGODB_CONNECTION_STRING=your_mongodb_connection_string
      `C:\your\path\keys\`  
      (create the folders if they don’t exist)
 
-Great question! Once you’ve downloaded the JSON key file, you need to **set an environment variable** so your code can authenticate using that key.
+Once you’ve downloaded the JSON key file, you need to **set an environment variable** so your code can authenticate using that key.
 
 ---
 
