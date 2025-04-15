@@ -1,51 +1,13 @@
 # Financial Intelligence Chatbot
 
-A robust, scalable financial chatbot capable of processing both structured and unstructured financial documents. The system extracts key insights, summarizes content, and answers user queries based on uploaded data.
-┌─────────────────────────────────────────────────────────────────────────┐
-│                          STREAMLIT FRONTEND                              │
-│  ┌──────────┐   ┌──────────────┐   ┌──────────┐   ┌──────────────────┐  │
-│  │  Upload  │   │    Chat      │   │  Export  │   │  Visualization   │  │
-│  │  Panel   │   │  Interface   │   │ Features │   │     Display      │  │
-│  └────┬─────┘   └────────┬─────┘   └────┬─────┘   └──────────────────┘  │
-└──────────────────────────┼──────────────┼────────────────────────────────┘
-                           │              ▲
-                           ▼              │
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        FINANCIAL AGENT                                   │
-│                                                                         │
-│  ┌──────────────┐   ┌───────────────┐   ┌───────────────────────┐       │
-│  │ Document     │   │ Intent        │   │ Response              │       │
-│  │ Processing   │◄──┤ Detection     │───┤ Generation            │       │
-│  └──────┬───────┘   └───────┬───────┘   └───────────┬───────────┘       │
-└──────────────────────────────────────────────────────────────────────────┘
-           │                   │                       │
-           ▼                   ▼                       │
-┌──────────────────┐  ┌────────────────────┐          │
-│ TOOL REGISTRY    │  │ LLM MANAGER        │          │
-│                  │  │                    │          │
-│ ┌──────────────┐ │  │ ┌──────────────┐   │          │
-│ │FileProcessor │ │  │ │   Gemini     │◄──┼──────────┘
-│ └──────────────┘ │  │ └──────────────┘   │
-│ ┌──────────────┐ │  │ ┌──────────────┐   │
-│ │FinancialTool │ │  │ │    Groq      │◄──┘
-│ └──────────────┘ │  │ └──────────────┘   │
-│ ┌──────────────┐ │  └────────────────────┘
-│ │ WebSearch    │ │
-│ └──────────────┘ │
-│ ┌──────────────┐ │            ┌───────────────────┐
-│ │Visualization │ ├───────────►│  DATABASE MANAGER │
-│ └──────────────┘ │            │                   │
-│ ┌──────────────┐ │            │ ┌─────────────┐   │
-│ │ TextSummary  │ │            │ │  MongoDB    │   │
-│ └──────────────┘ │            │ └─────────────┘   │
-│ ┌──────────────┐ │            │ ┌─────────────┐   │
-│ │LanguageTool  │ │            │ │Local Storage│   │
-│ └──────────────┘ │            │ └─────────────┘   │
-└──────────────────┘            └───────────────────┘
+A robust, scalable financial chatbot capable of processing structured and unstructured financial documents. The system extracts key insights, summarizes content, and answers user queries based on uploaded data.
 
 ## Agentic AI Architecture
 
 This implementation uses an agentic AI architecture powered by Google's Gemini models. The system consists of:
+
+![image](https://github.com/user-attachments/assets/994195c3-9ec0-4bcb-bd9f-28c193ab8e3b)
+
 
 1. **Core Agent**: A central coordinator that manages:
    - Intent detection
