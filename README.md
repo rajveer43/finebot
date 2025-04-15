@@ -1,8 +1,47 @@
 # Financial Intelligence Chatbot
 
 A robust, scalable financial chatbot capable of processing both structured and unstructured financial documents. The system extracts key insights, summarizes content, and answers user queries based on uploaded data.
-
-![Financial Intelligence Chatbot](docs/screenshots/dashboard.png)
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          STREAMLIT FRONTEND                              │
+│  ┌──────────┐   ┌──────────────┐   ┌──────────┐   ┌──────────────────┐  │
+│  │  Upload  │   │    Chat      │   │  Export  │   │  Visualization   │  │
+│  │  Panel   │   │  Interface   │   │ Features │   │     Display      │  │
+│  └────┬─────┘   └────────┬─────┘   └────┬─────┘   └──────────────────┘  │
+└──────────────────────────┼──────────────┼────────────────────────────────┘
+                           │              ▲
+                           ▼              │
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        FINANCIAL AGENT                                   │
+│                                                                         │
+│  ┌──────────────┐   ┌───────────────┐   ┌───────────────────────┐       │
+│  │ Document     │   │ Intent        │   │ Response              │       │
+│  │ Processing   │◄──┤ Detection     │───┤ Generation            │       │
+│  └──────┬───────┘   └───────┬───────┘   └───────────┬───────────┘       │
+└──────────────────────────────────────────────────────────────────────────┘
+           │                   │                       │
+           ▼                   ▼                       │
+┌──────────────────┐  ┌────────────────────┐          │
+│ TOOL REGISTRY    │  │ LLM MANAGER        │          │
+│                  │  │                    │          │
+│ ┌──────────────┐ │  │ ┌──────────────┐   │          │
+│ │FileProcessor │ │  │ │   Gemini     │◄──┼──────────┘
+│ └──────────────┘ │  │ └──────────────┘   │
+│ ┌──────────────┐ │  │ ┌──────────────┐   │
+│ │FinancialTool │ │  │ │    Groq      │◄──┘
+│ └──────────────┘ │  │ └──────────────┘   │
+│ ┌──────────────┐ │  └────────────────────┘
+│ │ WebSearch    │ │
+│ └──────────────┘ │
+│ ┌──────────────┐ │            ┌───────────────────┐
+│ │Visualization │ ├───────────►│  DATABASE MANAGER │
+│ └──────────────┘ │            │                   │
+│ ┌──────────────┐ │            │ ┌─────────────┐   │
+│ │ TextSummary  │ │            │ │  MongoDB    │   │
+│ └──────────────┘ │            │ └─────────────┘   │
+│ ┌──────────────┐ │            │ ┌─────────────┐   │
+│ │LanguageTool  │ │            │ │Local Storage│   │
+│ └──────────────┘ │            │ └─────────────┘   │
+└──────────────────┘            └───────────────────┘
 
 ## Agentic AI Architecture
 
